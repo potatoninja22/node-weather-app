@@ -29,16 +29,16 @@ app.get('/',(req,res)=>{
 
 app.get('/about',(req,res)=>{
     res.render('about',{
-        title: 'This is the about page',
-        footer: 'Created by Prasun'
+        title: 'About',
+        footer: 'Created by Prasun',
+        help_text: 'This app runs on Nodejs to provide the forecast and weather for the location entered by the user.'
     })
 })
 
 app.get('/help',(req,res)=>{
     res.render('help',{
-        title: 'I need Help. Please HALP!',
+        title: 'Help',
         footer: 'Created by Prasun',
-        help_text: 'This app runs on Nodejs to provide the forecast and weather for the location entered by the user.'
     })
 })
 
