@@ -12,7 +12,8 @@ const weather = (latitude, longitude,callback)=>{
         }
         else{
             let curr = body.current
-            callback(undefined,`${curr.weather_descriptions[0]}`+`. It is ${curr.temperature} degreees outside. It feels like it is ${curr.feelslike} degrees outside.`)
+            callback(undefined,`${curr.weather_descriptions[0]}`+`. It is ${curr.temperature} degreees outside. It feels like it is ${curr.feelslike} degrees outside.
+            The humidity is ${curr.weather_descriptions[6]}`)
         }
     })
 }
